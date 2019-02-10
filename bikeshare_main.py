@@ -51,19 +51,19 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
 
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!\n')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     user_city_input = input("Which city would you like to analyze ? \nChoose chicago, new york city, washington : ").lower()
     user_city_input = user_input_check(user_city_input, CITY_DATA, "city")
     city = CITY_DATA[user_city_input]
 
     # get user input for month (all, january, february, ... , june)
-    user_month_input = input("Which month would you like to analyze ? \nChoose any month from january to june. Choose 'all' if you want to see every month : ").lower()
+    user_month_input = input("\nWhich month would you like to analyze ? \nChoose any month from january to june. Choose 'all' if you want to see every month : ").lower()
     user_month_input = user_input_check(user_month_input, month_choose_list, "month")
     month = month_choose_list[user_month_input]
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    user_day_input = input("Which day of the week would you like to analyze ? \nChoose any day of the week. Choose 'all' if you want to see all : ").lower()
+    user_day_input = input("\nWhich day of the week would you like to analyze ? \nChoose any day of the week. Choose 'all' if you want to see all : ").lower()
     user_day_input = user_input_check(user_day_input, day_choose_list, "day_of_week")
     day = day_choose_list[user_day_input]
 
