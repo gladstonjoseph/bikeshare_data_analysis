@@ -7,8 +7,23 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-month_choose_list = {"january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6, "all": "all"}
-day_choose_list = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3, "friday": 4, "saturday": 5, "sunday": 6, "all": "all"}
+month_choose_list = {"january": 1, 
+                     "february": 2,
+                     "march": 3,
+                     "april": 4,
+                     "may": 5,
+                     "june": 6,
+                     "all": "all"}
+
+day_choose_list = {"monday": 0,
+                   "tuesday": 1,
+                   "wednesday": 2,
+                   "thursday": 3,
+                   "friday": 4,
+                   "saturday": 5,
+                   "sunday": 6,
+                   "all": "all"}
+
 restart_choose_list = ["yes", "no"]
 
 def user_input_check(user_input, choose_list, category):
